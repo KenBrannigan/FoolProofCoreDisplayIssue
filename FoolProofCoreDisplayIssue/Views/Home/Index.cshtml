@@ -1,0 +1,16 @@
+﻿@model FoolProofCoreDisplayIssue.Models.Index
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <form method="post">
+        <label asp-for="GoalAmount"></label>
+        <input asp-for="GoalAmount" type="text" />
+        <span asp-validation-for="GoalAmount"></span>
+        <input asp-for="IsRequired" type="hidden" />
+        <input type="submit" value="Submit" />
+    </form>
+</div>
