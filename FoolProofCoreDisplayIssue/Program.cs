@@ -1,3 +1,5 @@
+using FoolProof.Core;
+
 namespace FoolProofCoreDisplayIssue
 {
     public class Program
@@ -8,6 +10,8 @@ namespace FoolProofCoreDisplayIssue
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            builder.Services.AddFoolProof();
 
             var app = builder.Build();
 
